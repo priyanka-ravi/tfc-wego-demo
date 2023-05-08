@@ -99,7 +99,7 @@ spec:
               - name: '{{ .params.CLUSTER_NAME }}-core'
             interval: 1h
             retryInterval: 20s
-            path: ./cluster-templates/config
+            path: ./terraform/cluster-templates/config
             approvePlan: auto
             destroyResourcesOnDeletion: false
             # backendConfig:

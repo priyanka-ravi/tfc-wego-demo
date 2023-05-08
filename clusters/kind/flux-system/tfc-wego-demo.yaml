@@ -82,3 +82,6 @@ spec:
     value: ON_DEMAND
   - name: instance_type
     value: t3.medium
+  varsFrom:
+  - kind: Secret
+    name: '{{ .params.CLUSTER_NAME }}-core-outputs'
