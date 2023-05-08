@@ -84,4 +84,4 @@ spec:
     value: t3.medium
   varsFrom:
   - kind: Secret
-    name: '{{ .params.CLUSTER_NAME }}-core-outputs'
+    name: 'tfc-wego-demo-core-outputs'
