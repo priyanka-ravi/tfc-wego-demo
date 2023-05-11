@@ -27,7 +27,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: apps/wge
+  path: apps/wego
   prune: true
   validation: client
   wait: false
