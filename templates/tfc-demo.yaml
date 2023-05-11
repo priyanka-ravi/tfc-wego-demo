@@ -126,6 +126,9 @@ spec:
                 value: '{{ .params.CAPACITY_TYPE }}'
               - name: instance_type
                 value: '{{ .params.INSTANCE_TYPE }}'
+            varsFrom:
+              - kind: Secret
+                name: '{{ .params.CLUSTER_NAME }}-core-outputs'
             sourceRef:
               kind: GitRepository
               name: flux-system
